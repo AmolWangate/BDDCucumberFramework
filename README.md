@@ -1,4 +1,4 @@
-BDD cucumber framework created from scratch using all the latest tech stack availabe out there. It has following impementation:
+BDD cucumber framework created from scratch using all the latest tech stack availabe out there. It has following implementation:
 
 1) Selenium 
 2) Cucumber
