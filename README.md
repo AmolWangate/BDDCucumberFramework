@@ -1,6 +1,6 @@
 BDD cucumber framework created from scratch using all the latest tech stack availabe out there. It has following impementation:
 
-1) Selnium 
+1) Selenium 
 2) Cucumber
 3) TestNG
 4) Page object model
