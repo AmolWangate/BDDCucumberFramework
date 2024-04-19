@@ -2,14 +2,10 @@ package com.test.driverfactory;
 
 import java.util.Objects;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 public class DriverManager {
 
-	private static Logger LOG=LogManager.getLogger();
-	
 	private DriverManager() {
 
 	}
@@ -26,7 +22,7 @@ public class DriverManager {
 		return tlDriver.get();
 	}
 
-	public static void unload() {
+	static synchronized void unload() {
 		tlDriver.remove();
 	}
 }

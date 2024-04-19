@@ -44,7 +44,7 @@ public class Test {
 	@Then("I'm logged in")
 	public void i_m_logged_in() {
 		String title = manager.pageManager.getTestPage().getProductsTitle();
-		assertThat(title).isEqualTo("Products");
+		assertThat(title).isEqualTo("Product");
 	}
 
 	@Then("I'm not logged in")

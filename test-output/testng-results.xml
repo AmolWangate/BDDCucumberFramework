@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-06T17:01:50 IST" name="Default suite" finished-at="2024-04-06T17:02:05 IST" duration-ms="15208">
+  <suite started-at="2024-04-19T18:10:06 IST" name="Suite" finished-at="2024-04-19T18:10:48 IST" duration-ms="42063">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-06T17:01:50 IST" name="Default test" finished-at="2024-04-06T17:02:05 IST" duration-ms="15208">
+    <test started-at="2024-04-19T18:10:06 IST" name="Test" finished-at="2024-04-19T18:10:48 IST" duration-ms="42063">
       <class name="com.test.testrunner.TestNGRunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-04-06T17:01:50 IST" name="setUpClass" finished-at="2024-04-06T17:01:51 IST" duration-ms="867" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-04-19T18:10:06 IST" name="setUpClass" finished-at="2024-04-19T18:10:08 IST" duration-ms="1183" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@50ec4bfc]]>
+                <![CDATA[org.testng.TestRunner@275bf9b3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-04-06T17:01:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-06T17:02:00 IST" duration-ms="9213" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-04-19T18:10:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-19T18:10:36 IST" duration-ms="28045" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,14 +34,29 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+expected: "Product"
+ but was: "Products"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+expected: "Product"
+ but was: "Products"
+at com.test.stepdef.Test.i_m_logged_in(Test.java:47)
+at ✽.I'm logged in(file:///C:/Users/awangate/eclipse-workspace/BDDCucumbeFramework/src/test/resources/features/test.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-04-06T17:02:00 IST" name="tearDownClass" finished-at="2024-04-06T17:02:05 IST" duration-ms="5071" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-04-19T18:10:36 IST" name="tearDownClass" finished-at="2024-04-19T18:10:48 IST" duration-ms="12751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.test.testrunner.TestNGRunnerTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

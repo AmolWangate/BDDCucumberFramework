@@ -20,7 +20,7 @@ public final class PropertyUtil {
 			properties = new Properties();
 			properties.load(fileInputStream);
 		} catch (FileNotFoundException e) {
-			throw new FileNotFoundException("File could not be located", e.getCause());
+			throw new FileNotFoundException("File could not be located: " + e.getMessage(), e.getCause());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -7,4 +7,5 @@ public interface EnvConfig extends Config {
 
 	String browser();
 	String url();
+	String mode();
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.test.constants.FrameworkConstants;
+import com.test.customexceptions.InvalidWaitType;
 import com.test.driverfactory.DriverManager;
 import com.test.enums.WaitType;
 
@@ -20,22 +21,22 @@ public class WaitUtility {
 		WebElement webElement = null;
 		switch (waitType) {
 		case CLICKABLE:
-			webElement = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getExplicittimeout()))
+			webElement = new WebDriverWait(DriverManager.getDriver(),
+					Duration.ofSeconds(FrameworkConstants.getExplicittimeout()))
 					.until(ExpectedConditions.elementToBeClickable(element));
 			break;
 		case VISIBLE:
-			webElement = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getExplicittimeout()))
+			webElement = new WebDriverWait(DriverManager.getDriver(),
+					Duration.ofSeconds(FrameworkConstants.getExplicittimeout()))
 					.until(ExpectedConditions.visibilityOf(element));
 			break;
 		case NONE:
 			webElement = element;
 			break;
 		default:
-			break;
+			throw new InvalidWaitType("Invalid wait type: " + waitType.name());
 		}
-
 		return webElement;
-
 	}
 
 }

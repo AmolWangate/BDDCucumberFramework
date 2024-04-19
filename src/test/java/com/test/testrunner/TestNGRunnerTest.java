@@ -14,6 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 								"rerun:target/failedrerun.txt"},
 						dryRun = false,
 						tags = "@dataTable"
+						
 		)
 public class TestNGRunnerTest extends AbstractTestNGCucumberTests {
 
