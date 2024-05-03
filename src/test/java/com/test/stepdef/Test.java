@@ -20,15 +20,14 @@ public class Test {
 
 	TestContextManager manager;
 
-	private static final Logger LOG = LogManager.getLogger();
-
 	public Test(TestContextManager manager) {
 		this.manager = manager;
 	}
 
 	@Given("I'm on the home page.")
 	public void i_m_on_the_home_page() {
-
+	boolean isLogoDisplayed=manager.pageManager.getTestPage().isLogoDisplayed();
+	assertThat(isLogoDisplayed).isTrue();
 	}
 
 	@When("I enter userID as {string} and passwor as {string}")
@@ -44,13 +43,13 @@ public class Test {
 	@Then("I'm logged in")
 	public void i_m_logged_in() {
 		String title = manager.pageManager.getTestPage().getProductsTitle();
-		assertThat(title).isEqualTo("Product");
+		assertThat(title).isEqualTo("Products");
 	}
 
 	@Then("I'm not logged in")
 	public void i_m_not_logged_in() {
-		String title = manager.pageManager.getTestPage().getProductsTitle();
-		assertThat(title).isNotNull().isEqualTo("Products");
+		boolean isErrorDisplayed=manager.pageManager.getTestPage().isErrorMessageDisplayed();
+		assertThat(isErrorDisplayed).isTrue();
 	}
 
 	@When("I enter userID and password")

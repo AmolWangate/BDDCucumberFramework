@@ -15,7 +15,7 @@ Feature: validate diffrent login scenarios
     Then I'm not logged in
 
   @dataTable
-  Scenario: verify login with invalid data
+  Scenario: verify login with valid data
     Given I'm on the home page.
     When I enter userID and password
       | username      | password     |

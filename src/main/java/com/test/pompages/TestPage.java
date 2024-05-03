@@ -10,6 +10,9 @@ import com.test.utils.DriverUtilites;
 
 public class TestPage {
 
+	@FindBy(xpath = "//div[@class='login_logo']")
+	private WebElement logo;
+
 	@FindBy(xpath = "//input[@data-test='username']")
 	private WebElement inputUserName;
 
@@ -18,7 +21,7 @@ public class TestPage {
 
 	@FindBy(xpath = "//input[@data-test='login-button']")
 	private WebElement btnLogin;
-	
+
 	@FindBy(xpath = "//h3[@data-test='error']")
 	private WebElement titleLoginError;
 
@@ -27,6 +30,10 @@ public class TestPage {
 
 	public TestPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+	}
+
+	public boolean isLogoDisplayed() {
+		return DriverUtilites.isDisplayed(logo, WaitType.VISIBLE, "logo on login page");
 	}
 
 	public TestPage sendUserName(String userName) {
@@ -45,6 +52,10 @@ public class TestPage {
 
 	public String getProductsTitle() {
 		return DriverUtilites.getText(titleProducts, WaitType.VISIBLE, "products title");
+	}
+
+	public boolean isErrorMessageDisplayed() {
+		return DriverUtilites.isDisplayed(titleLoginError, WaitType.VISIBLE, "Error message on login page");
 	}
 
 }

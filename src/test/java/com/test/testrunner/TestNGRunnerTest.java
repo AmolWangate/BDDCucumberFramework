@@ -12,8 +12,8 @@ import io.cucumber.testng.CucumberOptions;
 								"json:target/json-report.json",
 								"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 								"rerun:target/failedrerun.txt"},
-						dryRun = false,
-						tags = "@dataTable"
+						dryRun = false
+//						/tags = "@dataTable"
 						
 		)
 public class TestNGRunnerTest extends AbstractTestNGCucumberTests {

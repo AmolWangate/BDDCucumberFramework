@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import com.test.enums.BrowserType;
 
@@ -28,6 +29,10 @@ public class LocalDriver implements IDriver {
 		case EDGE:
 			LOG.info("launching edge driver");
 			driver = new EdgeDriver();
+			break;
+		case SAFARI:
+			LOG.info("launching safari driver");
+			driver = new SafariDriver();
 			break;
 		default:
 			LOG.info("launching default chrome driver");
