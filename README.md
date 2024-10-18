@@ -1,20 +1,20 @@
-BDD cucumber framework created from scratch using all the latest tech stack available out there. It has following implementation:
+This cutting-edge BDD (Behavior-Driven Development) Cucumber framework is built from the ground up using the latest technologies to ensure scalability, maintainability, and ease of use. It comes equipped with the following implementations:
 
-1.	Selenium
-2.	Cucumber
-3.	TestNG
-4.	Page object model
-5.	Parallel execution
-6.	Extent reports
-7.	Publish cucumber reports to cloud
-8.	Cucumber reports (html, json)
-9.	TestNG runner
-10.	Failure TestNG runner
-11.	Custom Exceptions
-12.	Dependency injection using pico-container
-13.	AssertJ for assertions
-14.	Log4j2
-15.	TestNG xml execution
-16.	Command line execution
-17.	Browserstack implementation
-18.	Ready for CI/CD integration
+1) Selenium – Web automation for seamless browser interaction.
+2) Cucumber – For BDD, allowing clear and concise feature documentation.
+3) TestNG – To manage test execution and reporting.
+4) Page Object Model (POM) – Organized code structure for reusable page components.
+5) Parallel Execution – Faster test runs with multi-threaded capabilities.
+6) Extent Reports – Rich and interactive reporting with detailed test outcomes.
+7) Cloud-based Cucumber Report Publishing – Share test reports in the cloud.
+8) Cucumber Reports (HTML, JSON) – Comprehensive output formats for better analysis.
+9) TestNG Runner – For running tests seamlessly with TestNG.
+10) Failure TestNG Runner – Retry failed tests automatically.
+11) Custom Exceptions – Robust error handling tailored for the framework.
+12) Dependency Injection with Pico-container – Improved test modularity and object management.
+13) AssertJ for Assertions – Fluent and readable assertions for test validation.
+14) Log4j2 – Advanced logging mechanism for better traceability.
+15) TestNG XML Execution – Structured configuration for test suite execution.
+16) Command Line Execution – Flexible test execution via command line.
+17) BrowserStack Integration – Cross-browser testing in the cloud with BrowserStack.
+18) CI/CD Ready – Designed for continuous integration and delivery pipelines.
