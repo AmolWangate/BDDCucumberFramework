@@ -22,7 +22,7 @@ public final class PropertyUtil {
 		} catch (FileNotFoundException e) {
 			throw new FileNotFoundException("File could not be located: " + e.getMessage(), e.getCause());
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.exit(0);
 		}
 
 		return properties;

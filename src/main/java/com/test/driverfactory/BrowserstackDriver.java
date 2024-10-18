@@ -4,12 +4,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.test.customexceptions.DriverInitalizationException;
 import com.test.enums.BrowserType;
+import com.test.owner.EnvConfig;
 
 public class BrowserstackDriver implements IDriver {
 
@@ -18,17 +20,18 @@ public class BrowserstackDriver implements IDriver {
 		WebDriver driver = null;
 		MutableCapabilities capabilities = new MutableCapabilities();
 		HashMap<String, Object> bstackOptions = new HashMap<>();
-		capabilities.setCapability("browserName", "Chrome");
-		bstackOptions.put("os", "Windows");
-		bstackOptions.put("userName", "jondoe_YaEDIQ");
-		bstackOptions.put("accessKey", "zFESey2RQRXDzCrFWpTo");
-		bstackOptions.put("osVersion", "11");
-		bstackOptions.put("browserVersion", "latest");
-		bstackOptions.put("consoleLogs", "info");
-		bstackOptions.put("seleniumVersion", "4.18.1");
+		EnvConfig config = ConfigFactory.create(EnvConfig.class);
+		capabilities.setCapability("browserName", config.browserName());
+		bstackOptions.put("os", config.os());
+		bstackOptions.put("userName", config.userName());
+		bstackOptions.put("accessKey", config.accessKey());
+		bstackOptions.put("osVersion", config.osVersion());
+		bstackOptions.put("browserVersion", config.browserVersion());
+		bstackOptions.put("consoleLogs", config.consoleLogs());
+		bstackOptions.put("seleniumVersion", config.seleniumVersion());
 		capabilities.setCapability("bstack:options", bstackOptions);
 		try {
-			driver = new RemoteWebDriver(new URL("http://hub.browserstack.com/wd/hub/"), capabilities);
+			driver = new RemoteWebDriver(new URL(config.remoteURL()), capabilities);
 		} catch (MalformedURLException e) {
 			throw new DriverInitalizationException("Driver could not be launched: " + e.getMessage(), e.getCause());
 		}

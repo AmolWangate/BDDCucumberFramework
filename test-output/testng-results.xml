@@ -2,26 +2,58 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-03T17:13:26 IST" name="Suite" finished-at="2024-05-03T17:13:51 IST" duration-ms="25032">
+  <suite started-at="2024-10-18T17:07:37 IST" name="Suite" finished-at="2024-10-18T17:07:53 IST" duration-ms="16234">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@7b4c50bc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-05-03T17:13:26 IST" name="Test" finished-at="2024-05-03T17:13:51 IST" duration-ms="25032">
+    <test started-at="2024-10-18T17:07:37 IST" name="Test" finished-at="2024-10-18T17:07:53 IST" duration-ms="16234">
       <class name="com.test.testrunner.TestNGRunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-05-03T17:13:26 IST" name="setUpClass" finished-at="2024-05-03T17:13:28 IST" duration-ms="1160" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@7b4c50bc]" started-at="2024-10-18T17:07:37 IST" name="setUpClass" finished-at="2024-10-18T17:07:38 IST" duration-ms="661" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@675b18ff]]>
+                <![CDATA[org.testng.TestRunner@6cbb7a7d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-05-03T17:13:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-03T17:13:38 IST" duration-ms="10534" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@7b4c50bc]" started-at="2024-10-18T17:07:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-18T17:07:45 IST" duration-ms="7181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify login with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["validate diffrent login scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@7b4c50bc]" started-at="2024-10-18T17:07:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-18T17:07:48 IST" duration-ms="10379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify login with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["validate diffrent login scenarios"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@7b4c50bc]" started-at="2024-10-18T17:07:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-18T17:07:49 IST" duration-ms="11427" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,39 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-05-03T17:13:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-03T17:13:38 IST" duration-ms="10365" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["verify login with valid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["validate diffrent login scenarios"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-05-03T17:13:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-05-03T17:13:47 IST" duration-ms="8702" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["verify login with valid data"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["validate diffrent login scenarios"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.test.testrunner.TestNGRunnerTest@68c9d179]" started-at="2024-05-03T17:13:47 IST" name="tearDownClass" finished-at="2024-05-03T17:13:51 IST" duration-ms="4728" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.test.testrunner.TestNGRunnerTest@7b4c50bc]" started-at="2024-10-18T17:07:49 IST" name="tearDownClass" finished-at="2024-10-18T17:07:53 IST" duration-ms="4099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

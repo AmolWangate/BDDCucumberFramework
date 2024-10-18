@@ -97,7 +97,7 @@
 						<property>
 							<name>dataproviderthreadcount</name>
 							<parallel>methods</parallel>
-							<value>2</value>
+							<value>3</value>
 						</property>
 					</properties>
 					<suiteXmlFiles>testng.xml</suiteXmlFiles>
