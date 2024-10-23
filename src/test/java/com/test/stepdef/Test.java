@@ -5,8 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 
 import com.test.manager.TestContextManager;
 
@@ -50,6 +49,8 @@ public class Test {
 	public void i_m_not_logged_in() {
 		boolean isErrorDisplayed=manager.pageManager.getTestPage().isErrorMessageDisplayed();
 		assertThat(isErrorDisplayed).isTrue();
+		Assert.fail();
+
 	}
 
 	@When("I enter userID and password")

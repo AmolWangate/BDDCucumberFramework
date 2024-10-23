@@ -33,7 +33,7 @@ public class TestPage {
 	}
 
 	public boolean isLogoDisplayed() {
-		return DriverUtilites.isDisplayed(logo, WaitType.VISIBLE, "logo on login page");
+		return DriverUtilites.isElementDisplayed(logo, WaitType.VISIBLE, "logo on login page");
 	}
 
 	public TestPage sendUserName(String userName) {
@@ -55,7 +55,7 @@ public class TestPage {
 	}
 
 	public boolean isErrorMessageDisplayed() {
-		return DriverUtilites.isDisplayed(titleLoginError, WaitType.VISIBLE, "Error message on login page");
+		return DriverUtilites.isElementDisplayed(titleLoginError, WaitType.VISIBLE, "Error message on login page");
 	}
 
 }
