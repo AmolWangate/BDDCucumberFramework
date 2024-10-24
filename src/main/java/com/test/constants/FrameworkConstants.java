@@ -7,33 +7,39 @@ public final class FrameworkConstants {
 	private FrameworkConstants() {
 	}
 
-	private static final int PAGETIMEOUT = 40;
-	private static final int EXPLICITTIMEOUT = 40;
-	private static final String TESTRESOURCESPATH = System.getProperty("user.dir") + File.separator + "src"
+	private static final int PAGE_TIMEOUT = 40;
+	private static final int EXPLICIT_TIMEOUT = 40;
+	private static final String TEST_RESOURCES_PATH = System.getProperty("user.dir") + File.separator + "src"
 			+ File.separator + "test" + File.separator + "resources" + File.separator;
-	private static final String MAINRESOURCESPATH = System.getProperty("user.dir") + File.separator + "src"
+	private static final String MAIN_RESOURCES_PATH = System.getProperty("user.dir") + File.separator + "src"
 			+ File.separator + "main" + File.separator + "resources" + File.separator;
-	private static final String ENVCONFIGFILEPATH = TESTRESOURCESPATH + File.separator + "config" + File.separator
+	private static final String ENV_CONFIG_FILE_PATH = TEST_RESOURCES_PATH + File.separator + "config" + File.separator
 			+ "envconfig.properties";
+	private static final String REMOTE_CONFIG_FILE_PATH = TEST_RESOURCES_PATH + File.separator + "config" + File.separator
+			+ "remoteconfig.properties";
 
 	public static int getPagetimeout() {
-		return PAGETIMEOUT;
+		return PAGE_TIMEOUT;
 	}
 
 	public static int getExplicittimeout() {
-		return EXPLICITTIMEOUT;
+		return EXPLICIT_TIMEOUT;
 	}
 
 	public static String getTestresourcespath() {
-		return TESTRESOURCESPATH;
+		return TEST_RESOURCES_PATH;
 	}
 
 	public static String getMainresourcespath() {
-		return MAINRESOURCESPATH;
+		return MAIN_RESOURCES_PATH;
 	}
 
 	public static String getEnvconfigfilepath() {
-		return ENVCONFIGFILEPATH;
+		return ENV_CONFIG_FILE_PATH;
+	}
+
+	public static String getRemoteConfigFilePath() {
+		return REMOTE_CONFIG_FILE_PATH;
 	}
 
 }

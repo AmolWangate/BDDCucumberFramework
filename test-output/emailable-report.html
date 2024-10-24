@@ -9,61 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">19,359</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,934</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.test.testrunner.TestNGRunnerTest</td><td><a href="#m0">tearDownClass</a></td><td rowspan="1">1729670774052</td><td rowspan="1">659</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.test.testrunner.TestNGRunnerTest</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1729670757214</td><td rowspan="1">16834</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.test.testrunner.TestNGRunnerTest</td><td><a href="#m2">runScenario</a></td><td rowspan="2">1729670757214</td><td rowspan="2">16750</td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.test.testrunner.TestNGRunnerTest</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1729781924660</td><td rowspan="1">5988</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.test.testrunner.TestNGRunnerTest</td><td><a href="#m1">runScenario</a></td><td rowspan="2">1729781916967</td><td rowspan="2">7686</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.test.testrunner.TestNGRunnerTest#tearDownClass</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.google.gson.JsonIOException: Failed making field &apos;java.lang.Throwable#detailMessage&apos; accessible; either increase its visibility or write a custom TypeAdapter for its declaring type.
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:286)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory.create(CollectionTypeAdapterFactory.java:53)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:160)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:294)
-	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:130)
-	at com.google.gson.Gson.getAdapter(Gson.java:556)
-	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:55)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:97)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.write(CollectionTypeAdapterFactory.java:61)
-	at com.google.gson.Gson.toJson(Gson.java:842)
-	at com.google.gson.Gson.toJson(Gson.java:812)
-	at com.google.gson.Gson.toJson(Gson.java:783)
-	at com.aventstack.extentreports.reporter.JsonFormatter.flush(JsonFormatter.java:57)
-	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:37)
-	at com.aventstack.extentreports.reporter.JsonFormatter$1.onNext(JsonFormatter.java:30)
-	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
-	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
-	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:83)
-	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:95)
-	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:279)
-	at com.aventstack.extentreports.service.ExtentService.flush(ExtentService.java:47)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.finishReport(ExtentCucumberAdapter.java:301)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:137)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$8.receive(ExtentCucumberAdapter.java:134)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:117)
-	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:104)
-	at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:145)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:57)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	... 67 more
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.test.testrunner.TestNGRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify login with invalid data&quot;</td><td>&quot;validate diffrent login scenarios&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: null
-	at com.test.stepdef.Test.i_m_not_logged_in(Test.java:52)
-	at ✽.I&apos;m not logged in(file:///C:/Users/awangate/git/BDDCucumberFramework/src/test/resources/features/test.feature:15)
+<h2>Test</h2><h3 id="m0">com.test.testrunner.TestNGRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify login with valid data&quot;</td><td>&quot;validate diffrent login scenarios&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: null
+	at com.test.stepdef.Test.iEnterUserIDAndPassword(Test.java:59)
+	at ✽.I enter userID and password(file:///C:/Users/awangate/git/BDDCucumberFramework/src/test/resources/features/test.feature:20)
 ... Removed 2 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.test.testrunner.TestNGRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify login with invalid data&quot;</td><td>&quot;validate diffrent login scenarios&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.test.testrunner.TestNGRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify login with valid data&quot;</td><td>&quot;validate diffrent login scenarios&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.test.testrunner.TestNGRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;verify login with valid data&quot;</td><td>&quot;validate diffrent login scenarios&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -19,12 +19,12 @@ public class LocalDriver implements IDriver {
 		WebDriver driver = null;
 		switch (browserType) {
 		case CHROME:
-			LOG.info("launching chrome driver");
-			driver = new ChromeDriver();
+			LOG.info("launching chrome driver");	
+			driver = new ChromeDriver(BrowserCapabilities.getChromeOptions());
 			break;
 		case FIREFOX:
 			LOG.info("launching firefox driver");
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(BrowserCapabilities.getFirefoxOptions());
 			break;
 		case EDGE:
 			LOG.info("launching edge driver");
@@ -41,5 +41,4 @@ public class LocalDriver implements IDriver {
 		}
 		return driver;
 	}
-
 }

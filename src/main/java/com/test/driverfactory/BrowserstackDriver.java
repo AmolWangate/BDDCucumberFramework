@@ -21,17 +21,17 @@ public class BrowserstackDriver implements IDriver {
 		MutableCapabilities capabilities = new MutableCapabilities();
 		HashMap<String, Object> bstackOptions = new HashMap<>();
 		EnvConfig config = ConfigFactory.create(EnvConfig.class);
-		capabilities.setCapability("browserName", config.browserName());
+		capabilities.setCapability("browserName", config.browsername());
 		bstackOptions.put("os", config.os());
-		bstackOptions.put("userName", config.userName());
-		bstackOptions.put("accessKey", config.accessKey());
-		bstackOptions.put("osVersion", config.osVersion());
-		bstackOptions.put("browserVersion", config.browserVersion());
-		bstackOptions.put("consoleLogs", config.consoleLogs());
-		bstackOptions.put("seleniumVersion", config.seleniumVersion());
+		bstackOptions.put("userName", config.username());
+		bstackOptions.put("accessKey", config.accesskey());
+		bstackOptions.put("osVersion", config.osversion());
+		bstackOptions.put("browserVersion", config.browserversion());
+		bstackOptions.put("consoleLogs", config.consolelogs());
+		bstackOptions.put("seleniumVersion", config.seleniumversion());
 		capabilities.setCapability("bstack:options", bstackOptions);
 		try {
-			driver = new RemoteWebDriver(new URL(config.remoteURL()), capabilities);
+			driver = new RemoteWebDriver(new URL(config.remoteurl()), capabilities);
 		} catch (MalformedURLException e) {
 			throw new DriverInitalizationException("Driver could not be launched: " + e.getMessage(), e.getCause());
 		}

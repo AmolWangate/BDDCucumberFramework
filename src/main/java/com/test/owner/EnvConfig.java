@@ -13,13 +13,13 @@ public interface EnvConfig extends Config {
 	String url();
 	String mode();
 	
-	String browserName();
-	String browserVersion();
+	String browsername();
+	String browserversion();
 	String os();
-	String userName();
-	String accessKey();
-	String osVersion();
-	String consoleLogs();
-	String seleniumVersion();
-	String remoteURL();
+	String username();
+	String accesskey();
+	String osversion();
+	String consolelogs();
+	String seleniumversion();
+	String remoteurl();
 }

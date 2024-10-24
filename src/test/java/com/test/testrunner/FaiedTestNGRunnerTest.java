@@ -5,13 +5,13 @@ import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = "@target/failedrerun.txt",
+@CucumberOptions(features = "@reports/failedrerun.txt",
 				glue = {"com.test.stepdef","com.test.hooks"},
 						plugin= {"pretty",
-								"html:target/html-report.html",
-								"json:target/json-report.json",
-								"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-								"rerun:target/failedrerun.txt"},
+								"html:reports/html-report",
+								"json:reports/json-report.json",
+								"usage:reports/usage.json",
+								"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 						dryRun = false
 		)
 public class FaiedTestNGRunnerTest extends AbstractTestNGCucumberTests {

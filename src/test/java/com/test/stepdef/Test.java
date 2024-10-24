@@ -49,7 +49,6 @@ public class Test {
 	public void i_m_not_logged_in() {
 		boolean isErrorDisplayed=manager.pageManager.getTestPage().isErrorMessageDisplayed();
 		assertThat(isErrorDisplayed).isTrue();
-		Assert.fail();
 
 	}
 
@@ -57,6 +56,7 @@ public class Test {
 	public void iEnterUserIDAndPassword(DataTable dataTable) {
 		List<Map<String, String>> map = dataTable.asMaps(String.class, String.class);
 		manager.pageManager.getTestPage().sendUserName(map.get(0).get("username")).sendUserPwd(map.get(0).get("password"));
+		Assert.fail();
 	}
 
 }

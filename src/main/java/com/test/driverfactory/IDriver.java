@@ -4,8 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.test.enums.BrowserType;
 
-public interface IDriver {
-	
+public interface IDriver {	
 	public WebDriver getDriver(BrowserType browserType);
 
 }

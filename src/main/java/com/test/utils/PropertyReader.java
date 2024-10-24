@@ -20,7 +20,7 @@ public final class PropertyReader {
 		Properties properties = PropertyUtil.loadProperty(filePath);
 		if (Objects.isNull(key) || Objects.isNull(properties.get(key.name().toLowerCase()))) {
 			LOG.fatal("Incorrect key");
-			throw new InvalidKeyException(String.format("Provided key %s is not coorect", key));
+			throw new InvalidKeyException(String.format("Provided key %s is not correct", key));
 		}
 		return properties.getProperty(key.name().toLowerCase());
 	}

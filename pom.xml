@@ -17,12 +17,12 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.plugin>3.13.0</maven.compiler.plugin>
-		<maven.surefire.plugin.version>3.2.5</maven.surefire.plugin.version>
-		<version.selenium>4.19.1</version.selenium>
-		<version.cucumber>7.16.1</version.cucumber>
-		<version.pico-container>7.16.1</version.pico-container>
-		<version.assertJ>3.25.3</version.assertJ>
-		<version.log4j>2.23.1</version.log4j>
+		<maven.surefire.plugin.version>3.5.1</maven.surefire.plugin.version>
+		<version.selenium>4.25.0</version.selenium>
+		<version.cucumber>7.20.1</version.cucumber>
+		<version.pico-container>7.20.1</version.pico-container>
+		<version.assertJ>3.26.3</version.assertJ>
+		<version.log4j>2.24.1</version.log4j>
 		<version.cucumber-adapter>1.14.0</version.cucumber-adapter>
 		<version.owner>1.0.12</version.owner>
 
@@ -97,7 +97,7 @@
 						<property>
 							<name>dataproviderthreadcount</name>
 							<parallel>methods</parallel>
-							<value>3</value>
+							<value>2</value>
 						</property>
 					</properties>
 					<suiteXmlFiles>testng.xml</suiteXmlFiles>

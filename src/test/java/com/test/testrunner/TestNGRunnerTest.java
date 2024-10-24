@@ -8,12 +8,13 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features = "src/test/resources/features",
 				glue = {"com.test.stepdef","com.test.hooks"},
 						plugin= {"pretty",
-								"html:target/html-report.html",
-								"json:target/json-report.json",
-								"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-								"rerun:target/failedrerun.txt"},
+								 "html:reports/cucumber-reports.html",
+								 "json:reports/cucumber-reports.json",
+								 "usage:reports/usage.json",
+								 "rerun:reports/failedrerun.txt",
+								 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 						dryRun = false
-//						/tags = "@dataTable"
+//						tags = "@dataTable"
 						
 		)
 public class TestNGRunnerTest extends AbstractTestNGCucumberTests {

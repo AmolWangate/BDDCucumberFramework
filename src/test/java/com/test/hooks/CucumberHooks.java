@@ -36,10 +36,10 @@ public class CucumberHooks {
 
 	@After(order = 1)
 	public void getScreenshot(Scenario sc) {
-		if (sc.isFailed()) {
+		if(sc.isFailed()) {
 			LOG.error("getting screenshot for failed sceanrio: " + sc.getName());
-			byte[] path = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
-			sc.attach(path, "image/png", sc.getName());
+			byte[] data = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
+			sc.attach(data, "image/png", sc.getName());
 		}
 
 	}
