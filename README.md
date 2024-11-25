@@ -18,3 +18,10 @@ This cutting-edge BDD (Behavior-Driven Development) Cucumber framework is built 
 16) Command Line Execution – Flexible test execution via command line.
 17) BrowserStack Integration – Cross-browser testing in the cloud with BrowserStack.
 18) CI/CD Ready – Designed for continuous integration and delivery pipelines.
+
+
+Setup:
+
+Clone the repository: git clone https://github.com/AmolWangate/WTWSeleniumProject.git
+Install dependencies: mvn clean install -DskipTests
+Running Tests • Using Maven: mvn test -Dbrowser=chrome -Dmode=local • Using TestNG: Right-click on the testng.xml file in your IDE and select "Run". • Running on BrowserStack: Configure BrowserStack credentials and desired capabilities in the remotecaps.properties and change the mode to browserstack in envconfig.properties
